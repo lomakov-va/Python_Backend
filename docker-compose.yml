@@ -1,0 +1,12 @@
+version: '2.17.2'
+
+services:
+  db:
+    image: postgres:14.4
+    ports:
+      - '13672:5432'
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1111
+      POSTGRES_DB: db_course
